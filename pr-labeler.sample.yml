@@ -1,0 +1,14 @@
+file-path:
+  frontend: ["*.js", "*.css", "*.html"]
+  backend: ["/app/*"]
+  ci: ["/.ci/*"]
+
+target-branch:
+  label-name: ["master", "feature-branch"]
+  experimental: ["experiments"]
+
+author:
+  theforce-label: ["darthvader"]
+
+description:
+  label: ["word-occurance"]
