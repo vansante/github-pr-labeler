@@ -2,6 +2,11 @@
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that labels pull requests automatically
 
+## Configuration
+
+See [config-sample](pr-labeler.sample.yml) for an example of a configuration file that should be placed in your repository
+in the path `.github/pr-labeler.yml`.
+
 ## Setup
 
 ```sh
@@ -18,4 +23,4 @@ If you have suggestions for how PR-Labeler could be improved, or want to report 
 
 ## License
 
-[ISC](pr-labeler/LICENSE) © 2019 Paul van Santen <pvansanten@gmail.com>
+© 2019 Paul van Santen <pvansanten@gmail.com>

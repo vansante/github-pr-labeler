@@ -100,7 +100,7 @@ module.exports = app => {
           app.log.debug('Checking for author', label, author)
 
           if (pull.data.user.login === author) {
-            app.log.debug("Found author", label, author)
+            app.log.debug("Found author, applying label", label, author)
             addLabels.add(label)
           }
         }
@@ -123,7 +123,7 @@ module.exports = app => {
           app.log.debug('Checking for keyword', label, keyword)
 
           if (normalizedBody.indexOf(keyword) >= 0) {
-            app.log.debug("Found keyword", label, keyword)
+            app.log.debug("Found keyword, applying label", label, keyword)
             addLabels.add(label)
           }
         }
