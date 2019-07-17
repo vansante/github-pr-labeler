@@ -20,7 +20,3 @@ npm start
 ## Contributing
 
 If you have suggestions for how PR-Labeler could be improved, or want to report a bug, open an issue! We'd love all and any contributions.
-
-## License
-
-© 2019 Paul van Santen <pvansanten@gmail.com>
