@@ -145,13 +145,17 @@ module.exports = app => {
       }))
     }
 
-    app.log.info('Removing labels', labelsToRemove)
-    if (labelsToRemove.length > 0) {
-      for (const label of labelsToRemove) {
-        context.github.issues.removeLabel(context.issue({
-          name: label
-        }))
+    if ("settings" in config && config["settings"]["remove-labels"]) {
+      app.log.info('Removing labels', labelsToRemove)
+      if (labelsToRemove.length > 0) {
+        for (const label of labelsToRemove) {
+          context.github.issues.removeLabel(context.issue({
+            name: label
+          }))
+        }
       }
+    } else {
+      app.log.debug("Would have removed labels", labelsToRemove)
     }
   }
 }

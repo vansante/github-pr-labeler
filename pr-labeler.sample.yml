@@ -1,14 +1,23 @@
-file-path:
+settings:
+  remove-labels: true
+
+has-milestone-label: "milestone-detected"
+has-comments-label: "comments-detected"
+has-review-comments: "yay-reviews"
+mergeable-label: "can-be-merged"
+is-draft-label: "drafting"
+
+file-path-labels:
   frontend: ["*.js", "*.css", "*.html"]
   backend: ["/app/*"]
   ci: ["/.ci/*"]
 
-target-branch:
+target-branch-labels:
   label-name: ["master", "feature-branch"]
   experimental: ["experiments"]
 
-author:
+pr-author-labels:
   theforce-label: ["darthvader"]
 
-description:
+pr-description-labels:
   label: ["word-occurance"]
