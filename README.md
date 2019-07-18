@@ -50,16 +50,56 @@ are possible for one branch.
 ### Labels to apply for words in PR title
 
 The `title-keyword-labels` allows you to apply a label when a certain word is found in the PR title.
-for example:
+
+For example:
 ```yaml
 title-keyword-labels:
   in-progress: ["WiP"]
 ```
-This config applies the in-progress label whenever it encounters `WiP` anywhere in the PR title. 
+This config applies the in-progress label whenever it encounters `WiP` anywhere in the PR title.
 
 ### Labels to apply for words in PR description
 
 The `description-keyword-labels` allows you to the same, but then for the PR description.
+
+### Labels to apply for line change counts
+
+The `line-changes-labels` key allows you to give an array of possible conditions for the amount, which
+if all apply, apply the label.
+
+Possible conditions are:
+- `greater-than`: The count must be greater than the given number.
+- `greater-than-equal`: The count must be greater than or equal to the given number.
+- `less-than`: The count must be smaller than the given number.
+- `less-than-equal`: The count must be smaller than or equal to the given number.
+
+For example:
+```yaml
+line-changes-labels:
+  - greater-than: 300
+    less-than-equal: 1000
+    label: medium
+  - greater-than: 1000
+    label: large
+```
+
+The label `medium` will be applied if the amount of line changes in the PR is in the range of 301 to 1000.
+The label `large` will be applied if the amount of line changes in the PR is 1001 to infinity.
+
+### Labels to apply for line addition counts
+
+The `line-addition-labels` will do the same thing as line changes, but instead only look at the
+lines added.
+
+### Labels to apply for line deletion counts
+
+The `line-deletion-labels` will do the same thing as line changes, but instead only look at the
+lines deleted.
+
+### Labels to apply for commit counts
+
+The `commit-count-labels` will do the same thing as line changes, but instead it looks at the amount
+of commits that are in the PR.
 
 ### Labels to apply for authors
 
