@@ -1,14 +1,29 @@
-file-path:
+settings:
+  process-closed-prs: false
+  process-merged-prs: false
+  remove-labels: true
+  remove-keyword-labels: false
+
+has-milestone-label: "milestone-detected"
+has-comments-label: "comments-detected"
+has-review-comments-label: "yay-reviews"
+is-mergeable-label: "can-be-merged"
+is-draft-label: "drafting"
+
+path-labels:
   frontend: ["*.js", "*.css", "*.html"]
   backend: ["/app/*"]
   ci: ["/.ci/*"]
 
-target-branch:
+target-branch-labels:
   label-name: ["master", "feature-branch"]
   experimental: ["experiments"]
 
-author:
-  theforce-label: ["darthvader"]
+title-keyword-labels:
+  in-progress: ["WiP"]
 
-description:
+description-keyword-labels:
   label: ["word-occurance"]
+
+author-labels:
+  theforce-label: ["darthvader"]
