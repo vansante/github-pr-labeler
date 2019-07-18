@@ -6,8 +6,8 @@ settings:
 
 has-milestone-label: "milestone-detected"
 has-comments-label: "comments-detected"
-has-review-comments: "yay-reviews"
-mergeable-label: "can-be-merged"
+has-review-comments-label: "yay-reviews"
+is-mergeable-label: "can-be-merged"
 is-draft-label: "drafting"
 
 path-labels:
