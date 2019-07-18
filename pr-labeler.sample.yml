@@ -1,5 +1,8 @@
 settings:
+  process-closed-prs: false
+  process-merged-prs: false
   remove-labels: true
+  remove-keyword-labels: false
 
 has-milestone-label: "milestone-detected"
 has-comments-label: "comments-detected"
@@ -7,7 +10,7 @@ has-review-comments: "yay-reviews"
 mergeable-label: "can-be-merged"
 is-draft-label: "drafting"
 
-file-path-labels:
+path-labels:
   frontend: ["*.js", "*.css", "*.html"]
   backend: ["/app/*"]
   ci: ["/.ci/*"]
@@ -16,8 +19,8 @@ target-branch-labels:
   label-name: ["master", "feature-branch"]
   experimental: ["experiments"]
 
+pr-description-keyword-labels:
+  label: ["word-occurance"]
+
 pr-author-labels:
   theforce-label: ["darthvader"]
-
-pr-description-labels:
-  label: ["word-occurance"]
