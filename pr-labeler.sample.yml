@@ -19,8 +19,11 @@ target-branch-labels:
   label-name: ["master", "feature-branch"]
   experimental: ["experiments"]
 
-pr-description-keyword-labels:
+title-keyword-labels:
+  in-progress: ["WiP"]
+
+description-keyword-labels:
   label: ["word-occurance"]
 
-pr-author-labels:
+author-labels:
   theforce-label: ["darthvader"]
