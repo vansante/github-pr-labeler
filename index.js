@@ -11,6 +11,9 @@ module.exports = app => {
   app.on('pull_request.opened', label)
   app.on('pull_request.edited', label)
   app.on('pull_request.synchronize', label)
+  app.on('pull_request_review', label)
+  app.on('pull_request_review_comment', label)
+
 
   async function label(context) {
     // Create a PullRequestLabeler
