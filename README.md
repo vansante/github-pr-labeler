@@ -119,7 +119,7 @@ Some settings are configurable under the `settings` key:
 - `process-closed-prs`: Boolean. Should the robot do anything with PRs that are closed? Default false.
 - `process-merged-prs`: Boolean. Should the robot do anything with PRs that are merged? Default false.
 - `remove-labels`: Boolean. Should the robot also remove labels when their triggers are no longer true? Default false.
-- `remove-keyword-labels`: Boolean. Should the robot also remove labels triggered by magic keywords when the are no longer found? Default false.
+- `remove-keyword-labels`: Boolean. Should the robot also remove labels triggered by magic keywords when they are no longer found? Default false.
 
 ## Setup
 
